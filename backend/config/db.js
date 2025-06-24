@@ -14,3 +14,5 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+console.log("Mongo URI:", process.env.MONGO_URI); // Add this line temporarily
+
