@@ -4,17 +4,14 @@ FROM node:18
 # Set working directory
 WORKDIR /app
 
-# Copy only backend code
-COPY backend/ ./backend/
-
-# Set working directory to backend
-WORKDIR /app/backend
+# Copy backend code only
+COPY backend/ /app
 
 # Install dependencies
 RUN npm install
 
-# Expose the backend port
+# Expose backend port
 EXPOSE 5000
 
-# Start the app
+# Start the backend
 CMD ["npm", "start"]
