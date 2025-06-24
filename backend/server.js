@@ -5,7 +5,8 @@ const bodyParser = require("body-parser");
 const connectDB = require("./config/db");
 
 // Load environment variables
-dotenv.config();
+dotenv.config({ path: require("path").resolve(__dirname, "../.env") });
+
 
 // Connect to MongoDB
 connectDB();
