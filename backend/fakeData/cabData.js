@@ -163,4 +163,4 @@ const cabData = {
   ]
 };
 
-export default cabData;
+module.exports = cabData;
