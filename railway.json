@@ -1,0 +1,12 @@
+{
+    "build": {
+      "env": {
+        "PORT": "8000"
+      },
+      "command": "cd backend && npm install"
+    },
+    "start": {
+      "command": "cd backend && node server.js"
+    }
+  }
+  
